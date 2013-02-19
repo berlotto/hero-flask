@@ -9,7 +9,8 @@ def hello():
     return render_template('index.html')
 
 @app.route('/lipsum/')
-def lipsum():
+@app.route('/lipsum/<qtd>/')
+def lipsum(qtd=1):
 	g = Generator()
-	qtd = 6
-	return '<br><br>'.join([x[2] for x in g.generate_paragraphs(qtd,True)])
+	#qtd = 6
+	return '<br><br>'.join([x[2] for x in g.generate_paragraphs(int(qtd),True)])
