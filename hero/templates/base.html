@@ -1,14 +1,17 @@
 <html>
 <head>
 	<title>berlotto hero dev python environment :-)</title>
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:300,400' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}" media="screen" title="Default">
 </head>
 <body>
 	
+	<header>
+		<span>Visit: <a href="http://pythonrs.org">http://pythonrs.org</a></span>
+		<h1><a href="/">Hello World!</a></h1>
+	</header>
+
 	<div class="main-body">
-		<div class="main-header">
-			<h1>Hello World!</h1>
-			<p>Visit: <a href="http://pythonrs.org">http://pythonrs.org</a> </p>
-		</div>
 		<div class="main-content">
 			{%block content%}{%endblock%}
 		</div>

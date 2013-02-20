@@ -25,4 +25,5 @@ def passwd(tamanho=8):
 def lipsum(qtd=1):
 	g = Generator()
 	#qtd = 6
-	return '<br><br>'.join([x[2] for x in g.generate_paragraphs(int(qtd),True)])
+	lip = '<br><br>'.join([x[2] for x in g.generate_paragraphs(int(qtd),True)])
+	return render_template('lipsum.html', lip=lip)

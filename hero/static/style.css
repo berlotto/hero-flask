@@ -1,0 +1,41 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Oxygen', sans-serif;
+}
+
+p,a,div,span,ol,li,
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Oxygen', sans-serif;
+}
+
+.main-body{
+	width: 960px;
+	margin-top: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	/*background-color: #ddd;*/
+	padding: 5px 5px 0px 5px;
+}
+
+header{
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	background-color: #eee;
+}
+header span{
+	float: right;
+}
+header a{
+	text-decoration: none;
+	color: inherit;
+}
+header h1{
+	margin-left: 10px;
+}
+header span{
+	margin-right: 10px;
+	margin-top: 10px;
+}
